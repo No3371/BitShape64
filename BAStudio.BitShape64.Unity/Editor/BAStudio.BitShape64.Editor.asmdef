@@ -1,0 +1,17 @@
+{
+    "name": "BAStudio.BitShape64.Editor",
+    "references": [
+        "GUID:dfac89c9e925889498e798998cbc0f8a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
