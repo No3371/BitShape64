@@ -14,7 +14,7 @@ namespace BAStudio.BitShape64
                 EditorGUILayout.HelpBox("The column or row is 0.", MessageType.Error);
                 return;
             }
-            ulong value = unchecked((ulong)(property.longValue - long.MinValue));
+            ulong value = unchecked((ulong) property.longValue);
             int right = 0, bottom = 0;
             for (int h = 0; h < attr.column; h++)
             for (int w = 0; w < attr.row; w++)
@@ -34,7 +34,7 @@ namespace BAStudio.BitShape64
                 // GUI.Label(new UnityEngine.Rect(position.xMin + w * 16, position.yMin + h * 16, 16, 16), index.ToString());
             }
             if (value > 0) EditorGUI.DrawRect(new Rect(position.xMin, position.yMin, right * 16, bottom * 16), new Color(0.1f, 0.5f, 0.1f, 0.25f));
-            property.longValue = unchecked((long)value + long.MinValue);
+            property.longValue = unchecked((long)value);
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
