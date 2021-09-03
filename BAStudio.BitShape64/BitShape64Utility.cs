@@ -20,12 +20,15 @@ namespace BAStudio.BitShape64
         {
             int cells = 0;
             for (int i = 0; i < shape.height; i++)
-            for (int j = 0; j < shape.width; j++)
+            {
+                for (int j = 0; j < shape.width; j++)
             {
                 if ((shape.value & (1 << (i * shape.width + i))) == 0) continue;
                 cells++;
                 grids[cells] = (offsetX+j, offsetY+i);
             }
+            }
+
             return cells;
             // x = 3, y =5, w = 1, h = 3
             // (3+0, 5+0)
